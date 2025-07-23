@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
+import { Catamaran } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/page";
 import Footer from "@/components/footer/page";
@@ -20,6 +21,12 @@ const playfairDisplay = Playfair_Display({
   display: "swap",
 });
 
+const catamaran = Catamaran({
+  variable: "--font-catamaran",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export const metadata = {
   title: "Carolina Florez Portfolio",
   description: "This is the UX/UI portfolio from Carolina Florez",
@@ -29,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} ${catamaran.variable} antialiased`}
       >
         <Navbar/>
         {children}

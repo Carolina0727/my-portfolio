@@ -29,23 +29,42 @@ body {
 .playfair {
   font-family: var(--font-playfair-display);
   font-style: italic;
-  font-size: large;
+  font-size: 1.3rem;
 }
 .playfairRegular {
   font-family: var(--font-playfair-display);
-  font-style: regular;
-  font-size: large;
+  font-style: normal;
+  font-size: 2rem;
 }
 
 .playfairTitlesItalic {
   font-family: var(--font-playfair-display);
   font-style: italic;
-  font-size: x-large;
+  font-size: 2.5rem;
 }
+
+.playfairBigTitlesItalic {
+  font-family: var(--font-playfair-display);
+  font-style: italic;
+  font-size: 2.5rem;
+}
+
 .playfairTitlesRegular {
   font-family: var(--font-playfair-display);
-  font-style: regular;
-  font-size: x-large;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+.catamaranTitlesRegular {
+  font-family: var(--font-catamaran);
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.catamaran {
+  font-family: var(--font-catamaran);
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 300; 
 }
 
 .hover-underline-animation {
@@ -74,9 +93,11 @@ body {
 
   .hero-image{
     background-image: url("/Images/hero.png");
-    height: 30rem;
-    background-position: t;
+    background-position:  center;
     background-repeat: no-repeat;
-    background-size: 100% 70%;
-    position: relative;
+    background-size: 100%;
+    filter: drop-shadow(0px 0px 1.5px rgba(115, 22, 140, 50));
+  }
+ .backgroundCardsProjects {
+    background-image: linear-gradient(7deg,#73168C , #17090E);
   }
