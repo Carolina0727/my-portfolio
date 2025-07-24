@@ -4,6 +4,8 @@
   --background: #F5F5F5;
   --foreground: #303030;
   --primaryViolet:#73168C;
+  --background-button: #5E3E9B;
+  --background-second-black: #292323;
 }
 
 @theme inline {
@@ -63,7 +65,7 @@ body {
 .catamaran {
   font-family: var(--font-catamaran);
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 300; 
 }
 
@@ -98,6 +100,22 @@ body {
     background-size: 100%;
     filter: drop-shadow(0px 0px 1.5px rgba(115, 22, 140, 50));
   }
- .backgroundCardsProjects {
-    background-image: linear-gradient(7deg,#73168C , #17090E);
+  .buttonBackground {
+    background-color: var(--background-button);
+    color: var(--background);
+    box-shadow: 0px 2px 1px 0px #230443;
+    border-radius: 0.75rem;
+    
+  }
+  .buttonBackground:hover{
+    background-color: var(--background); 
+    color: var(--primaryViolet);
+    box-shadow: 0px 2px 1px 0px #230443;
+  }
+  .backgroundSecondary{
+    background-color: var(--background-second-black);
+    color: var(--background);
+  }
+  .boldText{
+    font-weight: 900;
   }

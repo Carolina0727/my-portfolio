@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 
 export default function Navbar() {
     const activateFunction=()=>{
@@ -7,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="flex">
         <div className="ml-6 flex justify-start my-4">
-            <a> <img src="/Images/FondoBlanco.png" alt="Logo" width="104" height="104"></img></a>
+            <a> <Image src="/Images/FondoBlanco.png" alt="Logo" width="104" height="104"></Image></a>
         </div>
         <div className="playfair flex justify-end w-screen my-11 mx-8">
             <div>
@@ -26,8 +27,7 @@ export default function Navbar() {
                     className="bg-primaryViolet text-background rounded-lg px-3 py-1 hover:bg-background hover:text-foreground"
                     onClick={activateFunction}   
                 >
-                    
-                    Let's Talk
+                    Let&apos;s Talk
                 </button>
             </div>
             
