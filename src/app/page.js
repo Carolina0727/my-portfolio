@@ -1,8 +1,31 @@
+'use client';
 import Image from "next/image";
 import MyProjects from "@/components/MyProjects/page";
 import CardIcon from "@/components/cardIcon/page";
+import {useKeenSlider} from "keen-slider/react";
+import "keen-slider/keen-slider.min.css"
+
+const animation = { duration: 20000, easing: (t) => t };
 
 export default function Home() {
+  const [sliderRef] = useKeenSlider({
+    loop: true,
+    renderMode: "performance",
+    drag: false,
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    slides: {
+      perView: 5,
+      spacing: 10,
+    },
+  })
   return (
     <div>
       <main className="text-foreground">
@@ -21,7 +44,7 @@ export default function Home() {
           
         </div>
         <div className="playfairBigTitlesItalic font-bold mx-14 my-2 flex py-8 flex flex-col">
-          <h1 className="flex-col pb-12">My Projects</h1>
+          <h1 className="flex-col pb-4">My Projects</h1>
           <MyProjects
             description="Redesigning one of Canada's top networking platforms, addressing pain points, enhancing strengths, and optimizing teamwork to achieve our goals."
             title="Redesign and Leadership"
@@ -66,52 +89,70 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex justify-center mb-12">
-          <button className="buttonBackground font-semibold py-3 px-8 playfair rounded-md shadow-md">
+          <button className="playfair bg-primaryViolet text-background rounded-lg px-3 py-1 hover:bg-background hover:text-foreground">
             More
           </button>
         </div>
       </div>
        <div className="playfairBigTitlesItalic font-bold mx-14 my-2 flex py-8 flex flex-col">
-        <h1 className="flex-col pb-12">What can you expect working with me?</h1>
+        <h1 className="flex-col">What can you expect working with me?</h1>
        </div>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mx-8 mb-16">
-          
-          <CardIcon
-            srcImage="/Images/icons/pentag.png"
-            text="Structured"
-          />
-          <CardIcon
-            srcImage="/Images/icons/creativity.png"
-            text="Creative"
-          />
-          <CardIcon
-            srcImage="/Images/icons/userFocused.png"
-            text="User-focused"
-          />
-          <CardIcon
-            srcImage="/Images/icons/detailOriented.png"
-            text="Detail-oriented"
-          />
-          <CardIcon
-            srcImage="/Images/icons/collaborative.png"
-            text="Collaborative"
-          />
-          <CardIcon
-            srcImage="/Images/icons/analytical.png"
-            text="Analytical"
-          />
-          <CardIcon
-            srcImage="/Images/icons/solutionDriven.png"
-            text="Solution-driven"
-          />
-          <CardIcon
-            srcImage="/Images/icons/proactive.png"
-            text="Proactive"
-          />
-          <CardIcon
-            srcImage="/Images/icons/adaptable.png"
-            text="Adaptable"
-          />
+
+        <div ref={sliderRef} className="keen-slider mb-12">
+          <div className="keen-slider__slide number-slide1">
+            <CardIcon
+              srcImage="/Images/icons/pentag.png"
+              text="Structured"
+            />
+          </div>
+          <div className="keen-slider__slide number-slide2">
+            <CardIcon
+              srcImage="/Images/icons/creativity.png"
+              text="Creative"
+            />
+          </div>
+          <div className="keen-slider__slide number-slide3">
+            <CardIcon
+              srcImage="/Images/icons/userFocused.png"
+              text="User-focused"
+            />
+          </div>
+          <div className="keen-slider__slide number-slide4">
+            <CardIcon
+              srcImage="/Images/icons/detailOriented.png"
+              text="Detail-oriented"
+            />
+          </div>
+          <div className="keen-slider__slide number-slide5">
+            <CardIcon
+              srcImage="/Images/icons/collaborative.png"
+              text="Collaborative"
+            />
+          </div>
+          <div className="keen-slider__slide number-slide6">
+            <CardIcon
+              srcImage="/Images/icons/analytical.png"
+              text="Analytical"
+            />
+          </div>
+          <div className="keen-slider__slide number-slide7">
+             <CardIcon
+              srcImage="/Images/icons/solutionDriven.png"
+              text="Solution-driven"
+            />
+          </div>
+          <div className="keen-slider__slide number-slide8">
+            <CardIcon
+              srcImage="/Images/icons/proactive.png"
+              text="Proactive"
+            />
+          </div>
+          <div className="keen-slider__slide number-slide9">
+            <CardIcon
+              srcImage="/Images/icons/adaptable.png"
+              text="Adaptable"
+            />
+          </div>
         </div>
       </main>
     </div>
