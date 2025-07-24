@@ -1,5 +1,6 @@
 import Image from "next/image";
 import MyProjects from "@/components/MyProjects/page";
+import CardIcon from "@/components/cardIcon/page";
 
 export default function Home() {
   return (
@@ -70,7 +71,48 @@ export default function Home() {
           </button>
         </div>
       </div>
-
+       <div className="playfairBigTitlesItalic font-bold mx-14 my-2 flex py-8 flex flex-col">
+        <h1 className="flex-col pb-12">What can you expect working with me?</h1>
+       </div>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 mx-8 mb-16">
+          
+          <CardIcon
+            srcImage="/Images/icons/pentag.png"
+            text="Structured"
+          />
+          <CardIcon
+            srcImage="/Images/icons/creativity.png"
+            text="Creative"
+          />
+          <CardIcon
+            srcImage="/Images/icons/userFocused.png"
+            text="User-focused"
+          />
+          <CardIcon
+            srcImage="/Images/icons/detailOriented.png"
+            text="Detail-oriented"
+          />
+          <CardIcon
+            srcImage="/Images/icons/collaborative.png"
+            text="Collaborative"
+          />
+          <CardIcon
+            srcImage="/Images/icons/analytical.png"
+            text="Analytical"
+          />
+          <CardIcon
+            srcImage="/Images/icons/solutionDriven.png"
+            text="Solution-driven"
+          />
+          <CardIcon
+            srcImage="/Images/icons/proactive.png"
+            text="Proactive"
+          />
+          <CardIcon
+            srcImage="/Images/icons/adaptable.png"
+            text="Adaptable"
+          />
+        </div>
       </main>
     </div>
   );
