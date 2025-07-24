@@ -23,7 +23,7 @@ export default function Home() {
     },
     slides: {
       perView: 5,
-      spacing: 10,
+      spacing: 4,
     },
   })
   return (

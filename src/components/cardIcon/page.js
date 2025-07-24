@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function CardIcon({ srcImage , text }) {
   return (
-    <div className={`${styles.backgroundCardsProjects} relative w-64 h-80 rounded-2xl border border-purple-300 shadow-lg flex flex-col items-center justify-center text-center p-6`}>
+    <div className={`${styles.backgroundCardsProjects} relative w-70 h-80 rounded-2xl border border-purple-300 shadow-lg flex flex-col items-center justify-center text-center p-6`}>
       <div className="w-28 h-28 rounded-2xl flex items-center justify-center mb-6">
         <Image
             src={srcImage}
@@ -14,7 +14,7 @@ export default function CardIcon({ srcImage , text }) {
             className="object-contain"
         />
       </div>
-      <p className="playfairRegular italic text-white">{text}</p>
+      <p className="w-full playfairRegular italic text-white">{text}</p>
     </div>
   );
 }
