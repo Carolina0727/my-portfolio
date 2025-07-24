@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </div>
        <div className="playfairBigTitlesItalic font-bold mx-14 my-2 flex py-8 flex flex-col">
-        <h1 className="flex-col">What can you expect working with me?</h1>
+        <h1 className="flex-col mb-8">What can you expect working with me?</h1>
        </div>
 
         <div ref={sliderRef} className="keen-slider mb-12">
