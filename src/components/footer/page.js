@@ -5,7 +5,14 @@ export default function Footer() {
   return (
     <div className=" flex flex-col justify-center bg-foreground">
         <div className="flex justify-center my-8"> 
-            <Image src="/Images/FondoNegro.png" alt="Logo" width="104" height="104"></Image>
+            <div className="relative w-[12.5rem] h-[12.5rem]">
+                <Image
+                    src="/Images/FondoNegro.png"
+                    alt="Logo"
+                    fill
+                    className="object-contain"
+                />
+            </div>
         </div>
        <div className="flex justify-center text-background playfair mb-8">
             <p> I&apos;m not reinventing the wheel, but I am making sure it spins in the best possible way.</p>
