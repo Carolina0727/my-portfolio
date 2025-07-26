@@ -93,6 +93,12 @@ body {
     transform-origin: bottom left;
   }
 
+  .navbar-active {
+    text-decoration: underline;
+    text-decoration-color: var(--primaryViolet);
+    text-underline-offset: 0.6rem;
+  }
+
   .hero-image{
     background-image: url("/Images/hero.png");
     background-position:  center;

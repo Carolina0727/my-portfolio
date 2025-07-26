@@ -4,10 +4,12 @@ import MyProjects from "@/components/MyProjects/page";
 import CardIcon from "@/components/cardIcon/page";
 import {useKeenSlider} from "keen-slider/react";
 import "keen-slider/keen-slider.min.css"
+import {useRouter } from "next/navigation";
 
 const animation = { duration: 20000, easing: (t) => t };
 
 export default function Home() {
+  const router = useRouter();
   const [sliderRef] = useKeenSlider({
     loop: true,
     renderMode: "performance",
@@ -26,6 +28,9 @@ export default function Home() {
       spacing: 4,
     },
   })
+  const handleClick = (path) => {
+    router.push(path);
+  };
   return (
     <div>
       <main className="text-foreground">
@@ -49,6 +54,7 @@ export default function Home() {
             description="Redesigning one of Canada's top networking platforms, addressing pain points, enhancing strengths, and optimizing teamwork to achieve our goals."
             title="Redesign and Leadership"
             imageSrc="/Images/RedesignAndLeadership.png"
+            onClick={() => handleClick('/proyect-redesign')}
           />
           <MyProjects
             description="Designing a team-driven app to help teens build healthy habits, tackling challenges and prototyping in a limited time."

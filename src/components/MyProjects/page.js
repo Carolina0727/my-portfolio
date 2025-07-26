@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 
-export default function MyProjects({ title, description, imageSrc, buttonText = "Take a Look", reverse = false }) {
+export default function MyProjects({ title, description, imageSrc, buttonText = "Take a Look", onClick }) {
   return (
     <div className={`flex flex-col md:flex-row items-center -space-x-48 my-16`}>
       <div className="w-2xl flex justify-center z-10">
@@ -21,7 +21,10 @@ export default function MyProjects({ title, description, imageSrc, buttonText = 
         </div>
 
         <div className="flex flex-col justify-end items-end w-1/5">
-          <button className="buttonBackground font-semibold py-2 px-6 playfair rounded-md shadow-md ">
+          <button 
+          className="buttonBackground font-semibold py-2 px-6 playfair rounded-md shadow-md"
+          onClick={onClick}
+          >
             {buttonText}
           </button>
         </div>
