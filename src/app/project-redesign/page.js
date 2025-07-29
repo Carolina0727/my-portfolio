@@ -141,7 +141,7 @@ export default function Home() {
             />
           </div>
           <p className="catamaran p-8">
-            The Meetup redesign demonstrates how thoughtful UX research can enhance accessibility, attract more users, and keep them engaged. Prioritizing white space allows for a cleaner, more organized interface, improving user experience. Additionally, structured teamwork with clear goals, strong communication, and defined timelines was key to achieving our objectives efficiently. Simplicity remains a leading design trend, ensuring users aren't overwhelmed and can navigate seamlessly. In the end, less is more, and a well-balanced, intuitive design makes all the difference.
+            The Meetup redesign demonstrates how thoughtful UX research can enhance accessibility, attract more users, and keep them engaged. Prioritizing white space allows for a cleaner, more organized interface, improving user experience. Additionally, structured teamwork with clear goals, strong communication, and defined timelines was key to achieving our objectives efficiently. Simplicity remains a leading design trend, ensuring users aren&apos;t overwhelmed and can navigate seamlessly. In the end, less is more, and a well-balanced, intuitive design makes all the difference.
           </p>
 
         </section>
