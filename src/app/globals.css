@@ -35,7 +35,7 @@ body {
 }
 .playfairRegular {
   font-family: var(--font-playfair-display);
-  font-style: normal;
+  font-style: italic;
   font-size: 2rem;
 }
 
@@ -122,6 +122,18 @@ body {
     background-color: var(--background-second-black);
     color: var(--background);
   }
+  .backgroundPrimary{
+    background-color: var(--background);
+    color: var(--foreground);
+  }
   .boldText{
     font-weight: 900;
+  }
+
+  .backgroundCardsProjects {
+    background-image: linear-gradient(7deg,#73168C , #17090E);
+    color: var(--background);
+  }
+  .custom-shadow{
+    box-shadow: 0px 4px 40px var(--primaryViolet);
   }

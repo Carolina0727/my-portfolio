@@ -54,7 +54,7 @@ export default function Home() {
             description="Redesigning one of Canada's top networking platforms, addressing pain points, enhancing strengths, and optimizing teamwork to achieve our goals."
             title="Redesign and Leadership"
             imageSrc="/Images/RedesignAndLeadership.png"
-            onClick={() => handleClick('/proyect-redesign')}
+            onClick={() => handleClick('/project-redesign')}
           />
           <MyProjects
             description="Designing a team-driven app to help teens build healthy habits, tackling challenges and prototyping in a limited time."
