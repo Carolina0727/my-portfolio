@@ -19,7 +19,9 @@ export default function Footer() {
         </div>
         <div className="flex justify-center playfair mb-8">                    
             <button 
-                className="bg-primaryViolet text-background rounded-lg px-3 py-1 hover:bg-background hover:text-foreground">
+                className="bg-primaryViolet text-background rounded-lg px-3 py-1 hover:bg-background hover:text-foreground"
+                onClick={() => window.location.href = "mailto:nunezflorezcarolina@gmail.com?subject=Hello&body=Hi Carolina,"} 
+            >
                     Let&apos;s Talk
             </button>
         </div>
