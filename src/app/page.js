@@ -97,7 +97,10 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full flex justify-center mb-12">
-          <button className="playfair bg-primaryViolet text-background rounded-lg px-3 py-1 hover:bg-background hover:text-foreground">
+          <button 
+            className="playfair bg-primaryViolet text-background rounded-lg px-3 py-1 hover:bg-background hover:text-foreground"
+            onClick={() => handleClick('/about')}
+            >
             More
           </button>
         </div>
