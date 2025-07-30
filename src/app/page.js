@@ -60,11 +60,13 @@ export default function Home() {
             description="Designing a team-driven app to help teens build healthy habits, tackling challenges and prototyping in a limited time."
             title="Sprint: Limited time, maximum impact"
             imageSrc="/Images/Sprint.png"
+            buttonText="Coming Soon"
           />
           <MyProjects
             description="An innovative UX-driven redesign of a café website, optimized for responsiveness, accessibility, and seamless user experience across all devices."
             title="Research-Driven, Responsive Design"
             imageSrc="/Images/Research.png"
+            buttonText="Coming Soon"
           />
         </div>
       <div className="backgroundSecondary w-full flex flex-col items-center relative">
