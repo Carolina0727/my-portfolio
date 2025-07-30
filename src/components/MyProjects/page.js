@@ -14,7 +14,7 @@ export default function MyProjects({ title, description, imageSrc, buttonText = 
         />
       </div>
 
-      <div className={`${styles.backgroundCardsProjects} w-full text-white py-6 px-8 rounded-xl shadow-lg flex justify-between items-stretch`}>
+      <div className={`${styles.backgroundCardsProjects} h-60 w-full text-white py-6 px-8 rounded-xl shadow-lg flex justify-between items-stretch`}>
         <div className="flex flex-col justify-center w-4/5 pr-4 pl-32">
           <h2 className="catamaranTitlesRegular font-normal pl-6 py-4">{title}</h2>
           <p className="catamaran pl-8">{description}</p>
